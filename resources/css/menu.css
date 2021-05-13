@@ -1,0 +1,340 @@
+
+
+
+@media screen and (max-width:1024px){
+  *{text-transform: capitalize;}
+    .desktop{display: none;}
+    .menu-wrap .imge{
+        position: absolute;
+        background-color: blue;
+        height: 90px;
+        width: 490px;
+        right: 0;
+        top: 0;
+    }
+
+.menu-wrap{
+    display: list-item;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 1;
+  }
+ 
+  
+  .menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  
+  }
+  .menu-wrap .humburger{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    background-color:#85A3C5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+  }
+  
+  /* line */
+  .menu-wrap .humburger .overlay{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .humburger .overlay:before,
+  .menu-wrap .humburger .overlay:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .menu-wrap .humburger .overlay::after{
+    top: 10px;
+  }
+  
+  
+  .menu-wrap .toggler:checked + .humburger .overlay{
+    transform: rotate(135deg);
+  }
+  
+  
+ 
+  .menu-wrap .toggler:checked + .humburger .overlay:before,
+  .menu-wrap .toggler:checked + .humburger .overlay:after{
+    transform: rotate(90deg);
+  }
+  
+  
+  
+  .menu-wrap .toggler:checked:hover + .humburger .overlay{
+    transform: rotate(225deg);
+  }
+  
+  
+  
+  /* menu */
+  
+  .menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* show */
+  
+  .menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu .one{
+    transform: scale(1);
+    
+  }
+  .menu-wrap .toggler:checked ~ .menu .two{
+    opacity:1 ;
+    transition: opacity 0.4s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* menu */
+  
+  .menu-wrap .menu .one{
+    background-color:#111010;
+    opacity: .8;
+    width: 100%;
+    height: 44vh;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  .menu-wrap .menu .two{
+    text-align: center;
+   
+  }
+  
+  .menu-wrap .menu .two ul li{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .menu-wrap .menu .two ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  
+  }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:667px,){
+*{text-transform: capitalize;}
+    .desktop{display: none;}
+    .menu-wrap .imge{
+        position: absolute;
+        background-color: blue;
+        height: 90px;
+        width: 490px;
+        right: 0;
+        top: 0;
+    }
+
+.menu-wrap{
+    display: list-item;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 1;
+  }
+ 
+  
+  .menu-wrap .toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+  
+  }
+  .menu-wrap .humburger{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    padding: 1rem;
+    background-color:#949494;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+  }
+  
+  /* line */
+  .menu-wrap .humburger .overlay{
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color:white ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+  }
+  
+  .menu-wrap .humburger .overlay:before,
+  .menu-wrap .humburger .overlay:after{
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+  }
+  
+  .menu-wrap .humburger .overlay::after{
+    top: 10px;
+  }
+  
+  
+  .menu-wrap .toggler:checked + .humburger .overlay{
+    transform: rotate(135deg);
+  }
+  
+  
+ 
+  .menu-wrap .toggler:checked + .humburger .overlay:before,
+  .menu-wrap .toggler:checked + .humburger .overlay:after{
+    transform: rotate(90deg);
+  }
+  
+  
+  
+  .menu-wrap .toggler:checked:hover + .humburger .overlay{
+    transform: rotate(225deg);
+  }
+  
+  
+  
+  /* menu */
+  
+  .menu-wrap .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 70%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* show */
+  
+  .menu-wrap .toggler:checked ~ .menu{
+    visibility: visible;
+  }
+  
+  .menu-wrap .toggler:checked ~ .menu .one{
+    transform: scale(1);
+    
+  }
+  .menu-wrap .toggler:checked ~ .menu .two{
+    opacity:1 ;
+    transition: opacity 0.4s ease;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  /* menu */
+  
+  .menu-wrap .menu .one{
+    background-color:#111010;
+    opacity: .8;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+  }
+  .menu-wrap .menu .two{
+    text-align: center;
+   
+  }
+  
+  .menu-wrap .menu .two ul li{
+    list-style: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+  }
+  
+  .menu-wrap .menu .two ul li a{
+    color: white;
+    text-decoration: none;
+    transition: color 0.4s ease;
+  
+  }
+
+
+
+
+}
+
+

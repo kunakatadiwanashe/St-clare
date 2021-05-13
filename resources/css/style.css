@@ -1,0 +1,1188 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  text-transform: capitalize;
+  scroll-behavior: smooth;
+  font-family: 'average';
+}
+
+* h2 {
+  font-size: 45px;
+}
+
+* h3 {
+  font-size: 30px;
+}
+
+.menu-wrap {
+  display: none;
+}
+
+.logo {
+  display: none;
+  height: 50px;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  border-radius: 20px;
+}
+
+.banner {
+  height: 90vh;
+  background-image: url(../img/high-school-5251586_1920.jpg);
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.banner header {
+  background-color: white;
+  height: 10vh;
+  position: absolute;
+  margin-top: 5vh;
+  width: 100vw;
+}
+
+.banner header img {
+  padding-right: 32rem;
+  padding-left: 80px;
+  height: 5rem;
+}
+
+.banner header .nav li {
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.banner header .nav li a {
+  color: black;
+  font-size: 20px;
+}
+
+.banner h2 {
+  font-size: 45px;
+  padding-top: 10%;
+}
+
+.banner h1 {
+  font-size: 70px;
+}
+
+.banner .inner {
+  height: 20vh;
+  margin-top: 70px;
+  background: rgba(221, 193, 144, 0.3);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.banner .topnav {
+  padding-left: 80%;
+}
+
+.banner .topnav li {
+  padding: 10px;
+}
+
+.banner .topnav li input {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.banner .topnav li a {
+  color: white;
+}
+
+.banner .topnav .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 1;
+}
+
+.banner .topnav .form-popup .form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  color: #f78b00;
+}
+
+.banner .topnav .form-popup .form-container input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+}
+
+.banner .topnav .form-popup .form-container input[type=text]:focus {
+  background-color: #36668a;
+}
+
+.banner .topnav .form-popup .form-container .btn {
+  background-color: #f78b00;
+  padding: 10px 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 1;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.banner .topnav .form-popup .form-container .btn:hover {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.banner .topnav .form-popup .form-container .cancel {
+  background-color: #ff0000;
+  padding: 10px 16px;
+  width: 100%;
+  margin-bottom: 10px;
+  opacity: 1;
+  font-size: 16px;
+}
+
+.about {
+  text-align: center;
+}
+
+.about h2 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.about .image {
+  width: 60%;
+  height: 50vh;
+}
+
+.about .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about .image video {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50%;
+  height: 60%;
+}
+
+.about .info h3 {
+  padding-bottom: 20px;
+}
+
+.about .info p {
+  padding: 20px;
+}
+
+.about .info a {
+  background-color: #85A3C5;
+  padding: 10px;
+  color: black;
+  border-radius: 10px;
+}
+
+.enrol {
+  height: 50vh;
+  background-image: url(../img/study-1968077__340.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.enrol .reg .form-box {
+  width: 500px;
+  height: 480px;
+  position: relative;
+  margin: 6% auto;
+  background: transparent;
+  padding: 5px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.enrol .reg .button-box {
+  width: 489px;
+  margin: 5px;
+  margin-top: 2rem;
+  position: relative;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 20px 9px #11100f;
+          box-shadow: 0 0 20px 9px #11100f;
+  background-color: #ffffff;
+}
+
+.enrol .reg .toggle-btn {
+  padding: 10px  34px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+.enrol .reg #btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  border-radius: 30px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: -webkit-gradient(linear, left top, right top, from(#1275e7), to(#ffffff));
+  background: linear-gradient(to right, #1275e7, #ffffff);
+}
+
+.enrol .reg .input-group {
+  top: 120px;
+  position: absolute;
+  width: 400px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.enrol .reg .input-group p {
+  padding: 5px 10px 5px 5px;
+  border: 1px solid grey;
+  width: 46%;
+  margin-left: 4px;
+  margin-right: 5px;
+  background-color: #ffffff;
+}
+
+.enrol .reg .input-group .input-field {
+  width: 46%;
+  padding: 5px 0;
+  margin: 5px 5px;
+  border: 1px solid #999;
+  padding: 5px 5px 5px 5px;
+}
+
+.enrol .reg .input-group button {
+  border: none;
+  padding: 10px;
+  margin-left: 35%;
+}
+
+.facilities {
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 60px;
+}
+
+.facilities h2 {
+  padding-bottom: 40px;
+}
+
+.facilities .inner {
+  position: relative;
+  width: 23vw;
+  height: 30vh;
+  margin-bottom: 20px;
+}
+
+.facilities .inner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 2%;
+}
+
+.facilities .inner h3 {
+  padding-bottom: 44%;
+}
+
+.facilities .inner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  overflow-y: hidden;
+  font-size: 12px;
+}
+
+.facilities .inner .overlay:hover {
+  opacity: 99;
+  width: 110%;
+}
+
+.facilities .inner:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.bording-area {
+  background: #85A3C5;
+  text-align: center;
+}
+
+.bording-area h2 {
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+
+.bording-area .bording {
+  padding: 50px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bording-area .bording .bordinginner {
+  width: 22vw;
+  height: 30vh;
+  padding: 30px;
+}
+
+.bording-area .bording .bordinginner img {
+  width: 100%;
+  height: 100%;
+}
+
+.bording-area .bording #info {
+  background-color: #85A3C5;
+  border: 3px solid white;
+}
+
+.bording-area .bording .top {
+  border-radius: 70px 0 0 0;
+}
+
+.bording-area .bording .bottom {
+  border-radius: 0 0px 0px 70px;
+}
+
+.bording-area .bording .ltop {
+  border-radius: 0 70px 0px 0px;
+}
+
+.bording-area .bording .b-right {
+  border-radius: 0 0px 70px 0px;
+}
+
+.news {
+  padding: 40px;
+  text-align: center;
+}
+
+.news .news-inner {
+  height: 30vh;
+  position: relative;
+}
+
+.news .news-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.news .news-inner .date {
+  background-color: #85A3C5;
+  width: 90px;
+  padding: 8px;
+  position: absolute;
+  top: 0;
+}
+
+.news .news-inner .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  overflow-y: hidden;
+  padding: 50px;
+}
+
+.news .news-inner .overlay:hover {
+  opacity: 99;
+  width: 110%;
+}
+
+.news .inner:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+.news .button-box {
+  border: 1px solid grey;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.news .button-box button {
+  border: 1px solid black;
+  background-color: #85A3C5;
+  border-radius: 20px;
+}
+
+.news .button-box .open-button {
+  background-color: white;
+  border: none;
+}
+
+.news .form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 10;
+  background-color: #85A3C5;
+}
+
+.news #cancel {
+  padding: 7px;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.sports {
+  text-align: center;
+  padding: 10px;
+}
+
+.sports h2 {
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.sports .sports-inner {
+  width: 20vw;
+  height: 30vh;
+  position: relative;
+}
+
+.sports .sports-inner h3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.sports .sports-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+.sports .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  overflow-y: hidden;
+  padding: 50px;
+}
+
+.sports .overlay:hover {
+  opacity: 99;
+  width: 110%;
+}
+
+.inner:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+}
+
+footer {
+  text-align: center;
+  background-color: #85A3C5;
+}
+
+footer h3 {
+  padding-bottom: 20px;
+}
+
+footer h2 {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+footer img {
+  border-radius: 20px;
+  margin-bottom: 30px;
+  width: 30%;
+}
+
+footer .footer-inner {
+  height: 40vh;
+}
+
+footer .footer-inner .inner {
+  width: 50%;
+  text-align: start;
+}
+
+footer .footer-inner .inner #red {
+  color: red;
+}
+
+footer .footer-inner a {
+  padding-right: 50px;
+  font-size: 40px;
+  margin-top: 30px;
+}
+
+footer .footer-inner .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(238, 238, 238, 0.5);
+  width: 60%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+footer .footer-inner .input input {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 10px 0 30;
+}
+
+footer #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .signature {
+  background-color: black;
+  height: 70px;
+  color: white;
+  margin-top: 30px;
+}
+
+footer .signature p {
+  padding-top: 20px;
+}
+
+.navbar {
+  height: 10vh;
+  background-color: #85A3C5;
+}
+
+.navbar .nav {
+  width: 100vw;
+}
+
+.navbar .nav img {
+  width: 70px;
+  border-radius: 20px;
+  margin-right: 75%;
+}
+
+.navbar .nav li {
+  padding: 20px 50px 0 0;
+}
+
+.navbar .nav li a {
+  color: white;
+}
+
+.aboutpage {
+  text-align: center;
+  padding: 20px 50px 20px 50px;
+}
+
+.population {
+  height: 35vh;
+  text-align: center;
+  background-color: #85A3C5;
+}
+
+.population .students {
+  padding-top: 30px;
+}
+
+.population .students img {
+  width: 25%;
+}
+
+.population .students p {
+  padding-top: 20px;
+}
+
+.passrate {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.schoolpage {
+  text-align: center;
+}
+
+.schoolpage .seniors {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 20%;
+}
+
+.schoolpage .seniors .inn {
+  width: 180px;
+  height: 25%;
+  position: relative;
+  margin-left: 40px;
+}
+
+.schoolpage .seniors .inn .mage {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.schoolpage .seniors .inn .names {
+  position: absolute;
+  bottom: 10px;
+  background-color: white;
+  width: 100%;
+}
+
+.schoolpage .junior {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+.schoolpage .junior .inn {
+  width: 180px;
+  height: 25%;
+  position: relative;
+  margin-left: 40px;
+}
+
+.schoolpage .junior .inn .mage {
+  width: 100%;
+}
+
+.schoolpage .junior .inn .names {
+  position: absolute;
+  width: 100%;
+  bottom: 1px;
+  -webkit-transform: translate(-50%, -50);
+          transform: translate(-50%, -50);
+  background-color: white;
+  padding: 4px;
+}
+
+.schoolpage .junior .inn .names h3 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    height: 80vh;
+  }
+  .banner header {
+    height: 10vh;
+  }
+  .banner header img {
+    padding-right: 2rem;
+    padding-left: 8px;
+    height: 5rem;
+  }
+  .banner header .nav li {
+    padding: 8px;
+    padding-top: 30px;
+  }
+  .banner h2 {
+    font-size: 45px;
+    padding-top: 20%;
+  }
+  .banner h1 {
+    font-size: 70px;
+  }
+  .banner .topnav {
+    padding-left: 60%;
+  }
+  .banner .topnav li {
+    padding: 10px;
+  }
+  .banner .topnav li a {
+    color: white;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .about .image {
+    width: 70%;
+    height: 40vh;
+  }
+  .about .info h3 {
+    padding-bottom: 20px;
+  }
+  .about .info p {
+    padding: 5px;
+  }
+  .facilities .inner {
+    width: 30vw;
+    height: 20vh;
+    margin-bottom: 20px;
+  }
+  .facilities .inner img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+    border-radius: 2%;
+  }
+  .facilities .inner h3 {
+    padding-bottom: 44%;
+  }
+  .facilities .inner .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    opacity: 0;
+    overflow-y: hidden;
+    font-size: 12px;
+  }
+  .facilities .inner .overlay:hover {
+    opacity: 99;
+    width: 110%;
+  }
+  .facilities .inner:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  .bording-area .bording .bordinginner {
+    width: 50%;
+    height: 20vh;
+    padding: 0;
+  }
+  .bording-area .bording #buger {
+    border-radius: 0 0 0 50px;
+  }
+  .bording-area .bording #police {
+    border-radius: 0 50px 0 0;
+  }
+  .bording-area .bording #info {
+    padding: 20px;
+  }
+  .news .news-inner {
+    height: 22vh;
+    width: 28vw;
+  }
+  .news .news-inner .overlay {
+    top: 55%;
+    padding: 20px;
+  }
+  .news .news-inner .overlay:hover {
+    opacity: 99;
+    width: 110%;
+  }
+  .news .inner:hover img {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-filter: blur(1px);
+            filter: blur(1px);
+  }
+  .news {
+    padding-top: 80px;
+  }
+  .news .news-inner {
+    height: 20vh;
+    width: 25vw;
+    margin-right: 40px;
+  }
+  .news #vents {
+    padding-left: 0;
+  }
+  .news .button-box {
+    width: 90%;
+    padding: 5px;
+  }
+  .news .button-box button {
+    padding: 10px;
+  }
+  .news .form-popup {
+    text-align: center;
+  }
+  .news #cancel {
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+  .sports {
+    text-align: center;
+    padding: 10px;
+  }
+  .sports .sports-inner {
+    width: 20vw;
+    height: 15vh;
+  }
+  footer h2 {
+    padding: 5px;
+  }
+  footer h3 {
+    font-size: 20px;
+  }
+  footer p {
+    font-size: 12px;
+  }
+  footer .footer-inner {
+    height: 40vh;
+    padding: 20px;
+  }
+  footer .footer-inner a {
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  footer .footer-inner .input {
+    width: 100%;
+    margin-left: 10px;
+  }
+  footer .footer-inner .input input {
+    margin: 5px 0px 0 10;
+  }
+  footer .footer-inner #sign-up {
+    margin-right: 30%;
+  }
+  footer .signature {
+    margin-top: 40px;
+  }
+  footer .signature p {
+    font-size: 12px;
+  }
+  .navbar .nav {
+    width: 100vw;
+  }
+  .navbar .nav img {
+    margin-right: 50%;
+  }
+  .population {
+    height: 20vh;
+  }
+  .passrate img {
+    max-width: 50%;
+  }
+  .schoolpage {
+    text-align: center;
+  }
+  .schoolpage .seniors {
+    margin-left: 0;
+  }
+  .schoolpage .junior {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 667px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  * h2 {
+    font-size: 30px;
+  }
+  * h3 {
+    font-size: 20px;
+  }
+  .menu-wrap {
+    display: list-item;
+  }
+  .logo {
+    display: list-item;
+  }
+  .banner {
+    height: 95vh;
+  }
+  .banner header {
+    display: none;
+  }
+  .banner h2 {
+    font-size: 30px;
+    padding-top: 30%;
+  }
+  .banner h1 {
+    font-size: 50px;
+  }
+  .banner .inner {
+    height: 13vh;
+    margin-top: 10px;
+  }
+  .banner .inner p {
+    font-size: 12px;
+  }
+  .banner .topnav {
+    padding-left: 5%;
+    background: rgba(133, 163, 197, 0.8);
+  }
+  .banner .topnav .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .banner .topnav .nav li {
+    padding: 25px 10px 10px 10px;
+  }
+  .banner .topnav .nav li a {
+    color: white;
+  }
+  .about {
+    text-align: center;
+  }
+  .about h2 {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  .about .image {
+    width: 50%;
+    height: 25vh;
+    position: relative;
+  }
+  .about .image video {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 90%;
+    height: 70%;
+  }
+  .about .info h3 {
+    padding-bottom: 20px;
+  }
+  .about .info p {
+    padding: 20px;
+  }
+  .enrol {
+    height: 60vh;
+  }
+  .enrol .reg .form-box {
+    width: 350px;
+  }
+  .enrol .reg h2 {
+    font-size: 20px;
+  }
+  .enrol .reg .button-box {
+    width: 300px;
+  }
+  .enrol .reg #btn {
+    width: 110px;
+  }
+  .enrol .reg .input-group {
+    width: 300px;
+  }
+  .facilities .inner {
+    width: 80vw;
+    height: 30vh;
+    margin-left: 20px;
+  }
+  .news .news-inner {
+    height: 25vh;
+    width: 70vw;
+    margin: 10px;
+  }
+  .news #vents {
+    padding-left: 50px;
+  }
+  .news .button-box {
+    width: 90%;
+    padding: 5px;
+  }
+  .news .button-box button {
+    padding: 10px;
+  }
+  .news .form-popup {
+    text-align: center;
+  }
+  .news #cancel {
+    padding: 7px;
+    border-radius: 20px;
+    background-color: #ffffff;
+  }
+  .bording-area h2 {
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+  .bording-area h3 {
+    font-size: 15px;
+  }
+  .bording-area p {
+    font-size: 10px;
+  }
+  .bording-area .bording .bordinginner {
+    width: 50%;
+    height: 20vh;
+    padding: 0;
+  }
+  .bording-area .bording #info {
+    background-color: #85A3C5;
+    border: 3px solid white;
+    padding: 10px;
+  }
+  .bording-area .bording .top {
+    border-radius: 50px 0 0 0;
+  }
+  .bording-area .bording .bottom {
+    border-radius: 0 0px 0px 50px;
+  }
+  .bording-area .bording .ltop {
+    border-radius: 0 50px 0px 0px;
+  }
+  .bording-area .bording .b-right {
+    border-radius: 0 0px 50px 0px;
+  }
+  .sports {
+    text-align: center;
+    padding: 20px;
+  }
+  .sports .sports-inner {
+    width: 88vw;
+  }
+  footer h2 {
+    padding: 5px;
+  }
+  footer .footer-inner {
+    height: 40vh;
+    padding: 20px;
+  }
+  footer .footer-inner a {
+    padding-right: 40px;
+    font-size: 20px;
+  }
+  footer .footer-inner .input {
+    width: 75vw;
+  }
+  footer .footer-inner .input input {
+    margin: 5px 0px 0 20;
+  }
+  footer .signature {
+    margin-top: 40px;
+  }
+  footer .signature p {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
